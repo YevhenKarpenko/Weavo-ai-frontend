@@ -1,0 +1,728 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Ensure overall layout adjustments */
+#root {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+.playfair-display-semi-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Flex layout for content */
+.content-wrapper {
+  display: flex;
+  overflow: auto;
+  margin-top: 90px;
+
+}
+
+
+
+
+
+
+.formHelperText{
+  max-width: 230px;
+ align-items: center;
+  text-align: center;
+}
+
+/* Form container styles */
+.background-image-aligner {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center align the text/content */
+
+}
+.form-container {
+   /* Take up half the width */
+  display: flex;
+  align-items: center ;
+
+}
+.input-form{
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  flex-direction: column;
+    
+}
+
+.route-pointes{
+  color:#143A6F;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 25px;
+ border: 1px solid rgba(0, 0, 0, 0);
+ width: 300px;
+}
+
+.back-blur{
+
+  background-color: #ffffffd2; 
+
+  border-radius:15px;
+  padding:23px 50px;
+
+}
+.main-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #143A6F;
+border-radius: 15px;
+padding: 10px;
+margin-top: 20px;
+margin-left:20px;
+margin-right:20px;
+margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.route-info-container {
+  margin-top: 18px;
+  flex: 1; /* Take up half the width */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.474);
+  border-radius: 25px;
+height: 90vh;
+}
+.trip-notes-container{
+  color: #143A6F;
+border-radius: 15px;
+padding: 10px;
+  margin: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+.google-map-btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #143A6F;
+border-radius: 15px;
+padding: 30px;
+  margin: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.scrollable-container{
+height: 100vh;
+overflow-y: auto;
+}
+
+
+.trip-notes-header{
+ font-weight: 500;
+  font-size: 20px;
+}
+.stops-helper-text{
+  font-weight: 500;
+   font-size: 20px;
+   opacity: 0.9;
+   color: #143A6F;
+ }
+
+.trip-notes{
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+
+.instruction{
+   background-color: #1876D2; 
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.MuiIconButton-root:focus {
+  outline: none;
+}
+.call-to-action-btn{
+
+
+  margin-top: 0; /* Remove top margin */
+  display: flex; /* Ensure flex layout */
+  align-self: center;
+
+
+
+
+}
+/* Map container styles */
+.map-container {
+opacity: 0.9;
+  flex: 1; /* Take up half the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 665px; /* Ensure map container takes full height */
+  padding-right: 20px;
+}
+.map-container-generated{
+padding: 20px 20px; 
+flex: 1; /* Take up half the width */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 700px;
+}
+
+.form-helper-container{
+  padding: 5px 10px;
+  height: 665px;
+  max-width: 300px;
+  margin: 0 10px;
+  color: #143A6F;
+border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.advice-cont{
+
+
+  flex: 0.4; /* Take up half the width */
+  display: flex;
+
+
+}
+
+.route-info-container{
+
+}
+
+
+
+
+.spinner-container{
+margin-top: 30px;
+}
+.map{
+  box-shadow: 0px 4px 8px rgba(0.3, 0.3, 0.3, 0.3);
+  height: 100%;
+  border-radius: 30px;
+
+}
+.stop-detail{
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 25px;
+ border: 1px solid rgba(0, 0, 0, 0);
+  color:#143A6F;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+margin-top: 0;
+margin-bottom: 50px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.stop-location{
+ 
+ 
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.stop-duration{
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0.7;
+margin: 10px 0;
+
+}
+
+.timer-icon{
+  color:#143A6F;
+}
+
+.country-detect-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stop-description{
+  opacity: 0.8;
+}
+.stops-counter{
+  text-align: center;
+  min-width: 70px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 15px;
+padding: 5px 7px;
+color:#143A6F;
+  background-color: transparent;
+  border: 1px solid #143A6F;;
+  border-radius: 25px;
+
+
+}
+.google-map-btn{
+  width: 160px;
+  text-align: center;
+  margin:30px;
+  background-color:rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+ 
+}
+
+.google-map-helper-text{
+  color:#143A6F;
+  text-align: center;
+  margin: 0;
+  
+}
+.google-map-helper-header{
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  opacity: 0.9;
+}
+.google-map-helper-sub-header{
+
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 0;
+  opacity: 0.9;
+}
+
+.background-landing{
+
+
+}
+
+
+
+.landing-page-container{
+text-align: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 93vh;
+
+}
+
+
+.banner-image{
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 24px;
+}
+
+ .walki-text{
+    background: linear-gradient(to right, #207BFE, #EF4E5D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 130px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .stop-image{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+     border-radius: 25px;
+     margin-left: 10px;
+     width: 320px;
+  }
+
+  .ai-text{
+ 
+    color:#143a6f98;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 500;
+
+  }
+  .main-landing-text-container{
+    width: 50%;
+  }
+  .main-landing-text{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .sub-landing-text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 0;
+    opacity: 80%;
+  }
+  .explore-btn {
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.706);
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out, background-color 0.7s ease-out;
+  }
+  
+  .explore-btn:hover {
+    background-color: #b8e4e000;
+    border: 1px solid rgba(0, 0, 0, 0.706);
+   
+  }
+  
+  .explore-btn.clicked {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+
+  .about-us-btn{
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+
+  .horizontal-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    align-items: baseline;
+    margin: 10px auto;
+    margin-top: 30px;
+
+  }
+
+ 
+/* Media query for screens 600px and below */
+
+
+@media (max-width: 600px) {
+
+  .content-wrapper{
+
+    flex-direction: column-reverse;
+  }
+  .scrollable-container {
+    height: auto; /* Remove fixed height */
+    overflow-y: visible; /* Remove vertical scroll */
+  }
+  .main-header{
+    font-size: 25px;
+    text-align: center;
+  }
+
+ .map-container {
+  display: none;
+  padding:0px 0px;
+  margin: 0px;
+  flex: 0; /* Take up half the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.map{
+  display: none;
+}
+.google-map-helper-header{
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.google-map-helper-sub-header{
+margin-top: 1px;
+  font-weight: 300;
+  font-size: 15px;
+  
+}
+
+.stop-detail{
+  background-color: rgba(255, 255, 255, 0.445);
+  border-radius: 25px;
+ border: 1px solid rgba(0, 0, 0, 0);
+  display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+margin-bottom: 30px;
+margin:10px 20px;
+}
+
+.stop-image{
+  width: 290px;
+margin: 24px;
+border: none;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.stop-location{
+  font-size: 20px;
+}
+.stop-duration{
+  font-size: 15px;
+}
+.stop-description{
+  font-size: 14px;
+}
+.stops-counter{
+  background-color: transparent;
+
+border:1px solid #143A6F;
+color:#143A6F;
+}
+
+
+  .landing-page-container {
+   display: flex;
+   height: 70vh;
+  }
+
+  /* .banner-image {
+    width: 70%;
+    margin: 20px auto; /* Center the banner image horizontally */
+   /* display: block;
+  */
+
+
+
+
+  .walki-text {
+    font-size: 80px;
+  }
+
+  .ai-text {
+    font-size: 20px;
+  }
+
+  .main-landing-text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-landing-text {
+    font-size: 24px;
+  }
+
+  .sub-landing-text {
+    font-size: 16px;
+  }
+
+  .explore-btn {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .back-blur{
+    border-radius:15px;
+    padding: 30px 15px;
+    margin:0px 25px;
+    background-color: white;
+
+  }
+
+  .form-container {
+    flex: 1; /* Take up half the width */
+    display: flex;
+  justify-content: center;
+    align-items: center;
+
+  }
+  .input-form{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+      
+  }
+/* Flex layout for content */
+
+
+/* Form container styles */
+
+
+  .input-form{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+      
+  }
+  .call-to-action-btn{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+  }
+ 
+
+  .form-container {
+    border-right: none; /* Remove right border for smaller screens */
+  }
+
+  .map {
+    height: 0px; /* Adjust map container height for better visibility on mobile */
+  }
+
+  .form-container{
+  
+  }
+  .formHelperText{
+    max-width: 300px;
+
+  }
+ 
+  
+  /* Flex layout for content */
+  
+  .formHelperText{
+    max-width: 230px;
+   align-items: center;
+    text-align: center;
+  }
+ 
+  
+  
+  
+  
+  
+  /* Form container styles */
+
+  .form-container {
+    flex: 1; /* Take up half the width */
+    display: flex;
+    align-items: center;
+  }
+  .input-form{
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+      
+  }
+  
+
+  
+  
+  .route-info-container {
+    flex: 1; /* Take up half the width */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure form container takes full height */
+
+  }
+  
+  .instruction{
+     background-color: #1876D2; 
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .MuiIconButton-root:focus {
+    outline: none;
+  }
+  .call-to-action-btn{
+
+    margin-left: 0px; /* Push the button to the right */
+    margin-top: 0; /* Remove top margin */
+    display: flex; /* Ensure flex layout */
+    align-self: center;
+  
+  }
+  .landing-page-container{
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 20px;
+   
+  
+  }
+
+  .banner-image{
+    margin: 0;
+    padding: 0;
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .banner-container{
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    width: 0px;
+  }
+
+  .form-helper-container{
+    margin-top: 30px;
+    padding: 5px 10px;
+    height: 280px;
+    max-width: 300px;
+   margin: auto;
+   margin-bottom: 20px;
+    color: #143A6F;
+  border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .trip-notes{
+    font-size: 16px;
+  }
+
+}
